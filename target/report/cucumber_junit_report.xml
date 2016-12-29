@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="3" tests="3" time="18.442633">
+<testcase classname="Customer Transfer's Fund As a customer," name="Valid Payee" time="6.972376">
+<skipped><![CDATA[Given the user is on Fund Transfer Page.....................................passed
+When he enters "Jim" as payee name..........................................passed
+And he enters "100" as amount...............................................passed
+And he submits request for Fund Transfer....................................passed
+Then ensure the fund transfer is complete with "100$ transferred succesfully to Jim!! "message.undefined
+]]></skipped>
+</testcase>
+<testcase classname="Customer Transfer's Fund As a customer," name="Invalid Conditions" time="5.288076">
+<skipped><![CDATA[Given the user is on Fund Transfer Page.....................................passed
+When he enters "Andres" as payee name.......................................passed
+And he enters "100" as amount...............................................passed
+And he submits request for Fund Transfer....................................passed
+Then ensure a transation failure "Transfer failed!! 'Andres' is not registered in your List of Payees" is displayed.undefined
+]]></skipped>
+</testcase>
+<testcase classname="Customer Transfer's Fund As a customer," name="Invalid Conditions 2" time="6.182181">
+<skipped><![CDATA[Given the user is on Fund Transfer Page.....................................passed
+When he enters "Tim" as payee name..........................................passed
+And he enters "100000" as amount............................................passed
+And he submits request for Fund Transfer....................................passed
+Then ensure a transation failure "Transfer failed!! account cannot be overdrawn" is displayed.undefined
+]]></skipped>
+</testcase>
+</testsuite>
